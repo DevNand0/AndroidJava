@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorBackground">#FCFCFC</color>
+    <color name="colorLightGrayLine">#EDEDED</color>
+    <color name="colorDeepPurple">#7C4DFF</color>
+    <color name="colorMaterialYello">#FFB300</color>
+    <color name="colorMaterialGreen">#00BFA5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDeepBlue">#536DFE</color>
+    <color name="colorLightGreen">#689F38</color>
+    <color name="colorSuperBlue">#303F9F</color>
+    <color name="colorWMWiseTheme">#213A53</color>
+    <color name="colorGrisOscuro">#607D8B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDeepOrange">#FF3D00</color>
+</resources>

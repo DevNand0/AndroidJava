@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Scan Wise</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="txt_battery_charge">Battery charge: </string>
+
+    <string name="title_bcr_error">Barcode Error</string>
+    <string name="dlg_enabling_bcr">Enabling Barcode Device</string>
+    <string name="lbl_firmware_version">Firmware version: %1$s</string>
+    <string name="lbl_serial_number">Serial number: %1$s</string>
+    <string name="lbl_external_device">External device: %1$s</string>
+    <string name="lbl_bcr_type">Barcode type: %1$s</string>
+
+    <string name="lbl_is_charging">Battery charging: %1$s</string>
+    <string name="lbl_is_charging_yes">Yes</string>
+    <string name="lbl_is_charging_no">No</string>
+
+    <string name="lbl_charge_percent">%1$d%%</string>
+
+    <string name="bcr_type_unknown">Unknown</string>
+    <string name="bcr_type_1d">1D</string>
+    <string name="bcr_type_2d">2D</string>
+    <string name="bcr_type_cam">Camera</string>
+
+    <string name="title_activity_loading_guide">LoadingGuideActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <string name="dlg_bcr_scanned">Symbology: %1$s\nEncoding: %2$s\nData: %3$s</string>
+    <string name="title_bcr_scanned">Barcode Scanned!</string>
+
+
+    <string name="scan_activity">Scan a Warehouse</string>
+    <string name="setting_activity">Setting</string>
+    <string name="correction_activity">Correction Scan Warehouse</string>
+    <string name="pickload_activity">Picked and Loading Guide</string>
+
+</resources>

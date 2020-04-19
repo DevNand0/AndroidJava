@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.wmwise.labelscannerwmwise.CorrectionScanActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spn_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:background="@drawable/rightroundcolor"
+                android:padding="5dp"
+                android:src="@drawable/barcode"/>
+            <EditText
+                android:id="@+id/et_warehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="22dp"
+                android:hint="   00000000-00-000"
+                android:background="@drawable/leftroundborder"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textColor="#FFF"
+                android:background="@color/colorWMWiseTheme"
+                android:layout_gravity="center"
+                android:text="+" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_warehouses"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_scan"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorWMWiseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_texto_scan"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_stay_current_landscape_black_24dp"
+                    android:gravity="center"
+                    android:text="Scan Bar"
+                    android:textColor="#FFFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="15dp"
+            android:id="@+id/cv_send"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorWMWiseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_texto2"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_done_all_black_24dp"
+                    android:text="Send"
+                    android:textSize="22dp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="15dp"
+            android:id="@+id/cv_clean"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorWMWiseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_texto3"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_remove_circle_outline_black_24dp"
+                    android:text="Clean"
+                    android:textSize="22dp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

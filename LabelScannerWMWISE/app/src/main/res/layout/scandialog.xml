@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wr_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan a Warehouse"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spn_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:background="@drawable/rightroundcolor"
+                android:padding="5dp"
+                android:src="@drawable/barcode"/>
+            <EditText
+                android:id="@+id/et_warehouse_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="25dp"
+                android:hint="00000000-00-000"
+                android:background="@drawable/leftroundborder"
+                android:textAlignment="center"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_scan_wr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:backgroundTint="@color/colorWMWiseTheme"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/btn_set_wr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:backgroundTint="@color/colorWMWiseTheme"
+            android:text="Load" />
+
+        <Button
+            android:id="@+id/btn_close_wr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:backgroundTint="@color/colorWMWiseTheme"
+            android:text="Close" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWMWiseTheme"
+    android:elevation="4dp"
+    >
+
+    <Button android:id="@+id/btn_back"
+            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:background="@color/colorWMWiseTheme"
+            android:textColor="@color/colorLightGrayLine"
+            android:text=""
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            />
+
+    <TextView android:layout_height="fill_parent"
+              android:layout_width="match_parent"
+              android:id="@+id/tv_title"
+              android:text="Titulo"
+              android:textStyle="bold"
+              android:textColor="@color/colorLightGrayLine"
+              android:textSize="20dp"/>
+
+</android.support.v7.widget.Toolbar>
